@@ -33,6 +33,9 @@ public class WebSecurityConfig{
     @Autowired
     private AuthEntryPointJwt unauthorizedHandler;
 
+    @Value("${frontend.url}")
+    private String frontendUrl;
+
     @Bean
     public AuthTokenFilter authenticationJwtTokenFilter() {
         return new AuthTokenFilter();
@@ -81,7 +84,7 @@ public class WebSecurityConfig{
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000","http://216.128.185.153", "https://atelier--mecanique.online"));
+        configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000",frontendUrl));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(Arrays.asList("*"));
         configuration.setAllowCredentials(true);
