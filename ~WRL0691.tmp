@@ -1,17 +1,6 @@
 # Atelier Mecanique WebApplication
 External Client Project: Customer, Appointment and Invoice management system
 
-## How to lunch demo on localhost:
-- Download Docker
-- Git clone the repository on your system
-- Uncomment mysql container in docker-compose.yml
-- Uncomment application.yml in API
-- Comment out lines 17-21 in application.properties
-- Use “docker-compose build” to build the project containers
-- Use “docker-compose up” to run the containers
-
-# Website deployed on:
-       https://ateliermecanique-ws.onrender.com/
 ## Epic Acronyms
 -  These acronyms will be used when naming branches and pull requests
 ### Vehicle Management     
