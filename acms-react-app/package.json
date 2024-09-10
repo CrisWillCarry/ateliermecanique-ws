@@ -1,4 +1,5 @@
 {
+  "proxy": "https://ateliermecanique-ws-backend.onrender.com",
   "name": "acms-react-app",
   "version": "0.1.0",
   "private": true,
