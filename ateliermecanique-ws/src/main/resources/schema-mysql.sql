@@ -7,7 +7,7 @@ create table if not exists vehicles(
     user_id VARCHAR(36),
     make VARCHAR(255),
     model VARCHAR(255),
-    year VARCHAR(5),
+    `year` VARCHAR(5),
     transmission_type VARCHAR(15),
     mileage VARCHAR(10)
 );
