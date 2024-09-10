@@ -41,6 +41,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("api/v1/auth")
+@CrossOrigin(origins = "https://ateliermecanique-ws.onrender.com")
 @AllArgsConstructor
 public class AuthController {
 
