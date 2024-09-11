@@ -46,9 +46,9 @@
 #      on-profile: docker
 #
 #  datasource:
-#    url: jdbc:mysql://autorack.proxy.rlwy.net:51009/railway #This is for localhost use:jdbc:mysql://mysql1/ateliermecanique-db
-#    username: root # For localhost use: user
-#    password: HLjbGJBldDHFYafwkmecIfxqtLRtWTSc #For localhost use: pwd
+#    url: jdbc:mysql://mysql1/ateliermecanique-db
+#    username:user
+#    password:pwd
 #
 #  jpa:
 #    hibernate:
